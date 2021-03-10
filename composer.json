@@ -15,7 +15,11 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": ">=7.4.13"
+        "php": ">=7.4.13",
+        "guzzlehttp/guzzle": "^7.0",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*"
     },
     "autoload": {
         "psr-4": {
