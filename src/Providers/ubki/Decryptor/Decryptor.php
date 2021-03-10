@@ -11,7 +11,8 @@ class Decryptor implements IDecryptor {
 	private $private_key;
 
 	public function __construct() {
-		$this->cert_file = realpath(__DIR__)."\\..\\cert\\rsa_key.pem";
+		$this->cert_file = realpath(__DIR__).DIRECTORY_SEPARATOR."..".
+			DIRECTORY_SEPARATOR."cert".DIRECTORY_SEPARATOR."rsa_key.pem";
 
 		if (
 			!(
