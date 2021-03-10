@@ -1,0 +1,25 @@
+{
+    "name": "teedexnet/bank-id",
+    "description": "BankID integration package",
+    "keywords": [
+        "BankID",
+        "identification"
+    ],
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Serhii Hidenko",
+            "email": "shidenko97@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "BankID\\": "src/"
+        }
+    }
+}
