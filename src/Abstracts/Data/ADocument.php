@@ -8,6 +8,7 @@ abstract class ADocument extends AData implements IData
 {
 
 	protected ?string $type;
+	protected ?string $name;
 	protected ?string $series;
 	protected ?string $number;
 	protected ?string $record_number;
@@ -19,6 +20,7 @@ abstract class ADocument extends AData implements IData
 	final public function getDataArray(): array
 	{
 		return [
+			"name" => $this->getName(),
 			"series" => $this->getSeries(),
 			"number" => $this->getNumber(),
 			"record_number" => $this->getRecordNumber(),
@@ -27,6 +29,11 @@ abstract class ADocument extends AData implements IData
 			"expire_date" => $this->getExpireDate(),
 			"issuer_country" => $this->getIssuerCountry(),
 		];
+	}
+
+	public function getName(): ?string
+	{
+		return $this->get("name");
 	}
 
 	public function getType(): ?string
