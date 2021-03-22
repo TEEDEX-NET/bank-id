@@ -7,25 +7,25 @@ use BankID\Interfaces\Data\IData;
 abstract class APersonal extends AData implements IData
 {
 
-	protected ?string $first_name;
-	protected ?string $middle_name;
-	protected ?string $last_name;
-	protected ?string $phone;
-	protected ?string $itn;
-	protected ?string $client_id;
-	protected ?string $description;
-	protected ?string $birthday;
-	protected ?string $sex;
-	protected ?string $email;
-	protected ?string $resident;
-	protected ?string $updated;
-	protected ?string $social_status;
-	protected ?string $is_pep;
-	protected ?string $is_terrorist;
-	protected ?string $is_restriction;
-	protected ?string $is_top_level_risk;
-	protected ?string $sidBi;
-	protected ?string $memberId;
+	protected ?string $first_name = null;
+	protected ?string $middle_name = null;
+	protected ?string $last_name = null;
+	protected ?string $phone = null;
+	protected ?string $itn = null;
+	protected ?string $client_id = null;
+	protected ?string $description = null;
+	protected ?string $birthday = null;
+	protected ?string $sex = null;
+	protected ?string $email = null;
+	protected ?string $resident = null;
+	protected ?string $updated = null;
+	protected ?string $social_status = null;
+	protected ?string $is_pep = null;
+	protected ?string $is_terrorist = null;
+	protected ?string $is_restriction = null;
+	protected ?string $is_top_level_risk = null;
+	protected ?string $sidBi = null;
+	protected ?string $memberId = null;
 
 	final public function getDataArray(): array
 	{

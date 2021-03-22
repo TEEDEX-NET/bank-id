@@ -7,15 +7,15 @@ use BankID\Interfaces\Data\IData;
 abstract class AAddress extends AData implements IData
 {
 
-	protected ?string $type;
-	protected ?string $country;
-	protected ?string $state;
-	protected ?string $area;
-	protected ?string $city;
-	protected ?string $district;
-	protected ?string $street;
-	protected ?string $home;
-	protected ?string $apartment;
+	protected ?string $type = null;
+	protected ?string $country = null;
+	protected ?string $state = null;
+	protected ?string $area = null;
+	protected ?string $city = null;
+	protected ?string $district = null;
+	protected ?string $street = null;
+	protected ?string $home = null;
+	protected ?string $apartment = null;
 
 	final public function getDataArray(): array
 	{

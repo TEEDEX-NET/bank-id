@@ -7,15 +7,15 @@ use BankID\Interfaces\Data\IData;
 abstract class ADocument extends AData implements IData
 {
 
-	protected ?string $type;
-	protected ?string $name;
-	protected ?string $series;
-	protected ?string $number;
-	protected ?string $record_number;
-	protected ?string $issuer;
-	protected ?string $issue_date;
-	protected ?string $expire_date;
-	protected ?string $issuer_country;
+	protected ?string $type = null;
+	protected ?string $name = null;
+	protected ?string $series = null;
+	protected ?string $number = null;
+	protected ?string $record_number = null;
+	protected ?string $issuer = null;
+	protected ?string $issue_date = null;
+	protected ?string $expire_date = null;
+	protected ?string $issuer_country = null;
 
 	final public function getDataArray(): array
 	{

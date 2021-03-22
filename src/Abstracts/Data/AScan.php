@@ -7,12 +7,12 @@ use BankID\Interfaces\Data\IData;
 abstract class AScan extends AData implements IData
 {
 
-	protected ?string $type;
-	protected ?string $download_url;
-	protected ?string $create_date;
-	protected ?string $file_extension;
-	protected ?string $file_name;
-	protected ?string $file_content;
+	protected ?string $type = null;
+	protected ?string $download_url = null;
+	protected ?string $create_date = null;
+	protected ?string $file_extension = null;
+	protected ?string $file_name = null;
+	protected ?string $file_content = null;
 
 	final public function getDataArray(): array
 	{
