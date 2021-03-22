@@ -78,7 +78,10 @@ class NBU extends AProvider
 		}
 
 		if ($data && isset($data) && $data["state"] == "ok") {
-			$this->getPacket()->setData($data);
+			$packet = $this->getPacket();
+			$packet->setData($data);
+			$packet->setMemberId($data["memberId"]);
+			$packet->setSidBi($data["sidBi"]);
 		} else {
 			BankIDException::raise("Can't load data");
 		}

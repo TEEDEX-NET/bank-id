@@ -24,6 +24,8 @@ abstract class APersonal extends AData implements IData
 	protected ?string $is_terrorist;
 	protected ?string $is_restriction;
 	protected ?string $is_top_level_risk;
+	protected ?string $sidBi;
+	protected ?string $memberId;
 
 	final public function getDataArray(): array
 	{
@@ -45,6 +47,8 @@ abstract class APersonal extends AData implements IData
 			"is_terrorist" => $this->getIsTerrorist(),
 			"is_restriction" => $this->getIsRestriction(),
 			"is_top_level_risk" => $this->getIsTopLevelRisk(),
+			"sidBi" => $this->getSidBi(),
+			"memberId" => $this->getMemberId(),
 		];
 	}
 
@@ -126,6 +130,14 @@ abstract class APersonal extends AData implements IData
 
 	public function getIsTopLevelRisk(): ?string {
 		return $this->get("is_top_level_risk");
+	}
+
+	public function getSidBi(): ?string {
+		return $this->get("sidBi");
+	}
+
+	public function getMemberId(): ?string {
+		return $this->get("memberId");
 	}
 
 }

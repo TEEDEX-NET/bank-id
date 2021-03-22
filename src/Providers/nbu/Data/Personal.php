@@ -26,6 +26,8 @@ class Personal extends APersonal
 		$this->is_restriction = $data["flagRestriction"] ?? null;
 		$this->is_top_level_risk = $data["flagTopLevelRisk"] ?? null;
 		$this->resident = $data["uaResident"] ?? null;
+		$this->sidBi = $data["sidBi"] ?? null;
+		$this->memberId = $data["memberId"] ?? null;
 
 		$this->packet = $packet;
 	}

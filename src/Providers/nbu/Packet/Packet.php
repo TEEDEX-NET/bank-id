@@ -19,6 +19,16 @@ class Packet
 	implements IAddressPacket, IDocumentPacket, IPersonalPacket, IScanPacket
 {
 
+	public function setMemberId(string $member_id): void
+	{
+		$this->data["memberId"] = $member_id;
+	}
+
+	public function setSidBi(string $sid_bi): void
+	{
+		$this->data["sidBi"] = $sid_bi;
+	}
+
 	public function setData(array $data): void
 	{
 		$decryptor = new Decryptor();
