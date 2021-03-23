@@ -77,7 +77,7 @@ class NBU extends AProvider
 			}
 		}
 
-		if ($data && isset($data) && $data["state"] == "ok") {
+		if ($data && isset($data) && mb_strtolower($data["state"]) == "ok") {
 			$packet = $this->getPacket();
 			$packet->setData($data);
 			$packet->setMemberId($data["memberId"]);
