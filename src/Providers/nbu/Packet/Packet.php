@@ -155,7 +155,6 @@ class Packet
 					"fields" => [
 						"typeName",
 						"number",
-						"recordNo",
 						"issue",
 						"dateIssue",
 						"dateExpiration",
