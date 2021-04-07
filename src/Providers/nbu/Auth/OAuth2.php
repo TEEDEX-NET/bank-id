@@ -156,10 +156,10 @@ class OAuth2 implements IOAuth2
 						mb_strlen($data["refresh_token"]) - 2
 					);
 					$log_body["client_secret"] = substr_replace(
-						$data["client_secret"],
-						str_repeat("*", mb_strlen($data["client_secret"]) - 2),
+						$body["client_secret"],
+						str_repeat("*", mb_strlen($body["client_secret"]) - 2),
 						1,
-						mb_strlen($data["client_secret"]) - 2
+						mb_strlen($body["client_secret"]) - 2
 					);
 
 					$logger->add("get_access_token", [
